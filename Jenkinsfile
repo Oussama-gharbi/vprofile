@@ -86,7 +86,7 @@ pipeline {
         stage("Publish to Nexus Repository Manager") {
             steps {
                 nexusArtifactUploader(
-        nexusVersion: NEXUS_VERSION,
+        nexusVersion: "${NEXUS_VERSION}",
         protocol: "${NEXUS_PROTOCOL}",
         nexusUrl: "${NEXUS_URL}",
         groupId: 'com.example',
@@ -94,9 +94,9 @@ pipeline {
         repository: "${NEXUS_REPOSITORY}",
         credentialsId: "${NEXUS_CREDENTIAL_ID}",
         artifacts: [
-            [artifactId: projectName,
+            [artifactId: vprofile,
              classifier: '',
-             file: 'my-service-' + version + '.jar',
+             file: 'target/vprofile-v2.jar,
              type: 'jar']
         ]
      )
