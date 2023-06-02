@@ -96,7 +96,7 @@ pipeline {
         artifacts: [
             [artifactId: vprofile,
              classifier: '',
-             file: 'target/vprofile-v2.jar,
+             file: 'target/vprofile-v2.jar',
              type: 'jar']
         ]
      )
