@@ -96,8 +96,8 @@ pipeline {
         artifacts: [
             [artifactId: 'vprofile',
              classifier: '',
-             file: 'target/vprofile-v2.jar',
-             type: 'jar']
+             file: 'target/vprofile-v2.war',
+             type: 'war']
         ]
      )
                 }
