@@ -88,12 +88,12 @@ pipeline {
                 script {
                     nexusArtifactUploader(
         nexusVersion: NEXUS_VERSION,
-        protocol: NEXUS_PROTOCOL,
-        nexusUrl: NEXUS_URL,
+        protocol: "${NEXUS_PROTOCOL}",
+        nexusUrl: "${NEXUS_URL}",
         groupId: 'com.example',
         version: "${env.BUILD_ID}-${env.BUILD_TIMESTAMP}",
-        repository: NEXUS_REPOSITORY,
-        credentialsId: NEXUS_CREDENTIAL_ID,
+        repository: "${NEXUS_REPOSITORY}",
+        credentialsId: "${NEXUS_CREDENTIAL_ID}",
         artifacts: [
             [artifactId: projectName,
              classifier: '',
