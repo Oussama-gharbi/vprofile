@@ -85,8 +85,7 @@ pipeline {
 
         stage("Publish to Nexus Repository Manager") {
             steps {
-                script {
-                    nexusArtifactUploader(
+                nexusArtifactUploader(
         nexusVersion: NEXUS_VERSION,
         protocol: "${NEXUS_PROTOCOL}",
         nexusUrl: "${NEXUS_URL}",
