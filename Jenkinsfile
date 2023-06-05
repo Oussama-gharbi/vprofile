@@ -103,7 +103,7 @@ pipeline {
     //             }
     //         }
         
-    stage('deploy to Tomcat')
+	    stage('deploy to Tomcat') {
      steps {
                 script {
                    echo 'deploying artifact  to Tomcat...'
@@ -129,4 +129,5 @@ pipeline {
 
 }
     }
+}
 }
