@@ -17,6 +17,8 @@ pipeline {
                       def cmd = "curl -u admin:nexus 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
                    sshagent(credentials: ['tomcat-server-key']) {
 			   sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 ${cmd} " 
+			   remoteOutput = sshCommand remote: remoteCommand, failonerr: true
+          			  println remoteOutput
                        }
     }
 
