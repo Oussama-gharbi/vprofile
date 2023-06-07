@@ -104,7 +104,7 @@ environment {
         artifacts: [
             [artifactId: 'vprofile',
              classifier: '',
-	     file: 'target/vprofile-${version}.war',
+	     file: "target/vprofile-$version.war",
              type: 'war']
         ]
      )
