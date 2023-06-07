@@ -1,7 +1,15 @@
 pipeline {
 
     agent any
-
+environment {
+        NEXUS_VERSION = "nexus3"
+        NEXUS_PROTOCOL = "http"
+        NEXUS_URL = "10.165.147.221:8081"
+        NEXUS_REPOSITORY = "vprofile-release"
+        NEXUS_CREDENTIAL_ID = "nexuslogin"
+        NEXUS_REPOGRP_ID    = "vprofile-maven-group"
+        scannerHome= tool 'mysonarscanner4'
+    }
 
     stages{
 
