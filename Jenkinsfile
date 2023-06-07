@@ -99,7 +99,7 @@ environment {
         protocol: "${NEXUS_PROTOCOL}",
         nexusUrl: "${NEXUS_URL}",
         groupId: 'com.example',
-        version: "${env.BUILD_ID}",
+        version: "${version}",
         repository: "${NEXUS_REPOSITORY}",
         credentialsId: "${NEXUS_CREDENTIAL_ID}",
         artifacts: [
