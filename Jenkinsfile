@@ -103,7 +103,7 @@ environment {
         artifacts: [
             [artifactId: 'vprofile',
              classifier: '',
-             file: 'target/vprofile-v2.war',
+	     file: 'target/vprofile-${version}.war',
              type: 'war']
         ]
      )
