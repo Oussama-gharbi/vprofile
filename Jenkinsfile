@@ -110,15 +110,13 @@ pipeline {
 
                    //def shellCmd = "bash ./server-cmds.sh ${IMAGE_NAME}"
                    def ec2Instance = "ec2-user@35.180.251.121"
-                   def cmd = "curl -u admin:nexus 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
+                   def cmd = "pwd"
 
                    sshagent(['tomcat-server-key']) {
-			   sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 ${cmd} " 
-			  sh 'pwd' 
+                       sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 pwd " 
+			            sh 'pwd' 
                      //sh " curl -u admin:nexus 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
-		    
-			    
-		      //sh "scp -o StrictHostKeyChecking=no docker-compose.yaml ${ec2Instance}:/home/ec2-user"
+		        	 //sh "scp -o StrictHostKeyChecking=no docker-compose.yaml ${ec2Instance}:/home/ec2-user"
                        //sh "ssh -o StrictHostKeyChecking=no ${ec2Instance} ${shellCmd}"
                         // ssh user1@server1 command1
                         //   ssh user1@server1 'command2'
