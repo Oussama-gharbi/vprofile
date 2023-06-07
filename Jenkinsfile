@@ -17,7 +17,7 @@ pipeline {
                      
                    sshagent(credentials: ['tomcat-server-key']) {
                        	sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 pwd " 
-			sh 'pwd' 
+			def remoteCommand = 'pwd' 
                        }
 			sh 'pwd'
     }
