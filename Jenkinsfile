@@ -131,7 +131,7 @@ environment {
                         sh "git remote set-url origin https://github.com/Oussama-gharbi/vprofile.git"
                         sh 'git add .'
                         sh 'git commit -m "ci: version bump"'
-                        sh 'git push origin HEAD:jenkins-jobs'
+                        sh 'git push origin HEAD:main'
                    // }
                 }
             }
