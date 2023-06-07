@@ -15,7 +15,7 @@ pipeline {
      steps {
                 script {
                      
-                   sshagent(['tomcat-server-key']) {
+                   sshagent(credentials: ['tomcat-server-key']) {
                        	sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 pwd " 
 			sh 'pwd' 
                        }
