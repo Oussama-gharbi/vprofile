@@ -129,7 +129,7 @@ environment {
                         sh 'git config --global user.name "jenkins"'
 
                         sh "git remote set-url origin  https://${USER}:${PASS}@github.com:Oussama-gharbi/vprofile.git"
-                        sh 'git add Jenkinsfile'
+                        sh 'git add .'
                         sh 'git commit -m "ci: version bump"'
                         sh 'git push origin HEAD:main'
                    }
