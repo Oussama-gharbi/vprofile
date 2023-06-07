@@ -110,9 +110,10 @@ pipeline {
 
                    //def shellCmd = "bash ./server-cmds.sh ${IMAGE_NAME}"
                    def ec2Instance = "ec2-user@35.180.251.121"
+                   def cmd = "pwd"
 
                    sshagent(['tomcat-server-key']) {
-                       sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248" 'pwd' 
+                       sh "ssh -o StrictHostKeyChecking=no ubuntu@10.165.147.248 pwd " 
 			  sh 'pwd' 
                      //sh " curl -u admin:nexus 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
 		    
