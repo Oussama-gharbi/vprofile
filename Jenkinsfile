@@ -16,7 +16,7 @@ pipeline {
                 script {
                       sh "curl -u admin:nexus -o newartifact.war 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
                    sshagent(credentials: ['tomcat-server-key']) {
-			   sh "sudo scp -o StrictHostKeyChecking=no newartifact.war ubuntu@10.165.147.248:/usr/local/tomcat8/webapps/vprofile" 
+			   sh "scp -o StrictHostKeyChecking=no newartifact.war ubuntu@10.165.147.248:/usr/local/tomcat8/webapps/vprofile" 
 			  }
     }
 
