@@ -119,7 +119,7 @@ pipeline {
 			   
 			   
 			   
-                       sh " echo $PASS  | curl -u $USERNAME:--password-stdin -o artifact11.war 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
+                       sh " echo $PASSWORD  | curl -u $USERNAME:--password-stdin -o artifact11.war 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/22/vprofile-22.war'"
 			  
 			}    
 		      //sh "scp -o StrictHostKeyChecking=no docker-compose.yaml ${ec2Instance}:/home/ec2-user"
