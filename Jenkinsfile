@@ -33,7 +33,6 @@ environment {
         }  
          stage('BUILD'){
              steps {
-		     	    echo "$version" 
 
                  sh 'mvn clean install -DskipTests'
              }
