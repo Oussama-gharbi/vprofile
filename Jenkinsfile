@@ -115,7 +115,7 @@ environment {
                 script {
                     sh "curl -u admin:nexus -o artifact-${version}.war 'http://10.165.147.221:8081/repository/vprofile-release/com/example/vprofile/${version}/vprofile-${version}.war'"
                     sshagent(credentials: ['tomcat-server-key']) {
-                    sh "ssh ubuntu@10.165.147.248 rm -rf /usr/local/tomcat8/webapps/vprofile"   
+                    sh "ssh ubuntu@10.165.147.248 rm -rf /usr/local/tomcat8/webapps/vprofile/*"   
 			        sh "scp -o StrictHostKeyChecking=no artifact-${version}.war ubuntu@10.165.147.248:/usr/local/tomcat8/webapps/vprofile" 
 			  }
 }
