@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.visualpathit.account.controllerTest.UserControllerTest" time="2.148" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.visualpathit.account.controllerTest.UserControllerTest" time="2.13" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.19+7-post-Ubuntu-0ubuntu122.04.1"/>
@@ -59,10 +59,10 @@
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeTestHappyFlow" time="1.825"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforHappyFlow" time="0.112"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="loginTestHappyFlow" time="0.109"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="indexTestHappyFlow" time="0.038"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeAfterDirectLoginTestHappyFlow" time="0.024"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforNullValueHappyFlow" time="0.04"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeTestHappyFlow" time="1.89"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="loginTestHappyFlow" time="0.108"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeAfterDirectLoginTestHappyFlow" time="0.067"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforNullValueHappyFlow" time="0.029"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforHappyFlow" time="0.016"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="indexTestHappyFlow" time="0.02"/>
 </testsuite>
