@@ -33,7 +33,7 @@ environment {
         }  
          stage('BUILD'){
              steps {
-                    sh 'rm -rf artifact*.war'
+               sh 'rm -rf artifact*.war'
                  sh 'mvn clean install -DskipTests'
              }
             post {
