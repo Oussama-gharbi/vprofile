@@ -2,5 +2,5 @@ projectKey=vprofile
 serverUrl=http://10.165.147.223:9000
 serverVersion=8.3.0.34182
 dashboardUrl=http://10.165.147.223:9000/dashboard?id=vprofile
-ceTaskId=AYigCKhl0AUQBbURHlHA
-ceTaskUrl=http://10.165.147.223:9000/api/ce/task?id=AYigCKhl0AUQBbURHlHA
+ceTaskId=AYnG8QvbenqcpLqDRxhO
+ceTaskUrl=http://10.165.147.223:9000/api/ce/task?id=AYnG8QvbenqcpLqDRxhO

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="6" failures="0" name="com.visualpathit.account.controllerTest.UserControllerTest" time="3.118" errors="0" skipped="0">
+<testsuite tests="6" failures="0" name="com.visualpathit.account.controllerTest.UserControllerTest" time="2.02" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
-    <property name="java.vm.version" value="11.0.19+7-post-Ubuntu-0ubuntu122.04.1"/>
+    <property name="java.vm.version" value="11.0.20+8-post-Ubuntu-1ubuntu122.04"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-11-openjdk-amd64/lib"/>
     <property name="maven.multiModuleProjectDirectory" value="/var/lib/jenkins/workspace/vprofile"/>
     <property name="java.vm.vendor" value="Ubuntu"/>
@@ -15,7 +15,7 @@
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="user.dir" value="/var/lib/jenkins/workspace/vprofile"/>
     <property name="java.vm.compressedOopsMode" value="32-bit"/>
-    <property name="java.runtime.version" value="11.0.19+7-post-Ubuntu-0ubuntu122.04.1"/>
+    <property name="java.runtime.version" value="11.0.20+8-post-Ubuntu-1ubuntu122.04"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.io.tmpdir" value="/tmp"/>
@@ -32,7 +32,7 @@
     <property name="java.class.version" value="55.0"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
-    <property name="os.version" value="5.15.0-73-generic"/>
+    <property name="os.version" value="5.15.0-78-generic"/>
     <property name="library.jansi.path" value="/usr/share/maven/lib/jansi-native"/>
     <property name="user.home" value="/var/lib/jenkins"/>
     <property name="user.timezone" value="Africa/Tunis"/>
@@ -49,20 +49,21 @@
     <property name="java.specification.vendor" value="Oracle Corporation"/>
     <property name="awt.toolkit" value="sun.awt.X11.XToolkit"/>
     <property name="java.vm.info" value="mixed mode, sharing"/>
-    <property name="java.version" value="11.0.19"/>
+    <property name="java.version" value="11.0.20"/>
     <property name="java.vendor" value="Ubuntu"/>
+    <property name="java.specification.maintenance.version" value="2"/>
     <property name="maven.home" value="/usr/share/maven"/>
     <property name="file.separator" value="/"/>
-    <property name="java.version.date" value="2023-04-18"/>
+    <property name="java.version.date" value="2023-07-18"/>
     <property name="java.vendor.url.bug" value="https://bugs.launchpad.net/ubuntu/+source/openjdk-lts"/>
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforHappyFlow" time="2.794"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="indexTestHappyFlow" time="0.08"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="loginTestHappyFlow" time="0.157"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforNullValueHappyFlow" time="0.03"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeTestHappyFlow" time="0.033"/>
-  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeAfterDirectLoginTestHappyFlow" time="0.024"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="loginTestHappyFlow" time="1.769"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="indexTestHappyFlow" time="0.058"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeTestHappyFlow" time="0.101"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforHappyFlow" time="0.035"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="registrationTestforNullValueHappyFlow" time="0.036"/>
+  <testcase classname="com.visualpathit.account.controllerTest.UserControllerTest" name="welcomeAfterDirectLoginTestHappyFlow" time="0.021"/>
 </testsuite>
